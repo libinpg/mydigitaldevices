@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getDeviceCompanion } from "@/data/companions";
 import type { Device } from "@/types/device";
 
 const iconByCategory = {
@@ -16,6 +17,8 @@ const statusLabels = {
 } as const;
 
 export default function DeviceCard({ device }: { device: Device }) {
+  const companion = getDeviceCompanion(device.id);
+
   return (
     <Link
       href={`/devices/${device.id}`}
@@ -29,7 +32,15 @@ export default function DeviceCard({ device }: { device: Device }) {
       </div>
       <p className="mb-1 text-xs uppercase tracking-[0.2em] text-zinc-500">{device.brand}</p>
       <h3 className="text-xl font-semibold tracking-tight text-white">{device.name}</h3>
+      {companion && (
+        <p className="mt-2 text-sm font-medium text-cyan-200/80">{companion.role}</p>
+      )}
       <p className="mt-2 text-sm leading-6 text-zinc-400">{device.summary}</p>
+      {companion && (
+        <p className="mt-4 border-l border-cyan-300/20 pl-3 text-sm leading-6 text-zinc-500">
+          “{companion.voice}”
+        </p>
+      )}
       {device.specs.length > 0 && (
         <div className="mt-5 flex flex-wrap gap-2">
           {device.specs.slice(0, 2).map((spec) => (
