@@ -5,26 +5,26 @@ export default function UpgradeCheckPage() {
   return (
     <main className="mx-auto max-w-4xl px-6 py-16 sm:py-24">
       <Link href="/" className="text-sm text-zinc-400 transition hover:text-white">
-        ← Back to device archive
+        ← 返回设备档案
       </Link>
 
       <section className="mt-10 max-w-3xl">
-        <p className="text-sm uppercase tracking-[0.3em] text-cyan-300/80">Evidence-first upgrade check</p>
+        <p className="text-sm uppercase tracking-[0.3em] text-cyan-300/80">基于证据的升级检查</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-          Turn an upgrade impulse into a testable requirement.
+          把“想升级”转换成可以验证的需求。
         </h1>
         <p className="mt-6 text-base leading-7 text-zinc-400 sm:text-lg">
-          This page does not decide whether you should buy something. It helps separate a documented limitation from novelty, comparison pressure, or an unmeasured concern.
+          这个页面不会替你决定是否购买新设备，而是帮助区分：已经明确存在的限制、尚未量化的问题，以及单纯来自新品或比较带来的吸引力。
         </p>
       </section>
 
       <section className="mt-12 rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
         <div className="flex items-start justify-between gap-6">
           <div>
-            <p className="text-xs uppercase tracking-[0.24em] text-zinc-500">Before buying</p>
-            <h2 className="mt-2 text-2xl font-semibold">Record the evidence</h2>
+            <p className="text-xs uppercase tracking-[0.24em] text-zinc-500">购买之前</p>
+            <h2 className="mt-2 text-2xl font-semibold">先记录证据</h2>
           </div>
-          <span className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-200">30-day review suggested</span>
+          <span className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-200">建议 30 天后再次评估</span>
         </div>
 
         <ol className="mt-8 space-y-5">
@@ -35,7 +35,7 @@ export default function UpgradeCheckPage() {
               </span>
               <div>
                 <p className="font-medium text-zinc-100">{question}</p>
-                <p className="mt-2 text-sm leading-6 text-zinc-500">Write down an observation, measurement, or concrete example. “It feels old” is a valid feeling, but not yet a performance requirement.</p>
+                <p className="mt-2 text-sm leading-6 text-zinc-500">尽量写下观察、测量结果或具体例子。“感觉它有点旧”是真实感受，但还不能直接等同于性能需求。</p>
               </div>
             </li>
           ))}
@@ -44,21 +44,21 @@ export default function UpgradeCheckPage() {
 
       <section className="mt-8 grid gap-4 sm:grid-cols-3">
         <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-          <p className="text-sm font-medium text-white">Documented blocker</p>
-          <p className="mt-2 text-sm leading-6 text-zinc-500">A task fails, takes too long, runs out of memory/storage, or misses a measurable target.</p>
+          <p className="text-sm font-medium text-white">已确认的限制</p>
+          <p className="mt-2 text-sm leading-6 text-zinc-500">某项任务无法完成、耗时明显超出可接受范围、内存或存储不足，或者达不到你预先设定的可测量目标。</p>
         </div>
         <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-          <p className="text-sm font-medium text-white">Needs observation</p>
-          <p className="mt-2 text-sm leading-6 text-zinc-500">There may be a real limitation, but there is not enough repeated or measured evidence yet.</p>
+          <p className="text-sm font-medium text-white">需要继续观察</p>
+          <p className="mt-2 text-sm leading-6 text-zinc-500">可能存在真实限制，但目前还没有足够频繁或可测量的证据。</p>
         </div>
         <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-          <p className="text-sm font-medium text-white">Novelty-driven</p>
-          <p className="mt-2 text-sm leading-6 text-zinc-500">The desire is mostly about a new product, design, launch, or comparison rather than a current task failure.</p>
+          <p className="text-sm font-medium text-white">主要来自新品吸引力</p>
+          <p className="mt-2 text-sm leading-6 text-zinc-500">购买欲望主要来自新品发布、外观、宣传或与其他设备比较，而不是当前任务确实失败。</p>
         </div>
       </section>
 
       <p className="mt-10 text-sm leading-6 text-zinc-600">
-        These labels are prompts for reflection, not psychological or financial advice. A purchase can still be worthwhile for enjoyment even when it is not required by performance.
+        这些分类只是帮助整理思路，不属于心理或财务建议。即使性能上并非必需，为兴趣和体验购买设备仍然可以是一个个人选择。
       </p>
     </main>
   );
