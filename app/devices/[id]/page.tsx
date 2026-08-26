@@ -2,6 +2,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { categoryLabels, devices } from "@/data/devices";
 
+const statusLabels = {
+  active: "在用",
+  spare: "备用",
+  retired: "已退役"
+} as const;
+
 export function generateStaticParams() {
   return devices.map((device) => ({ id: device.id }));
 }
@@ -13,7 +19,7 @@ export default function DeviceDetailPage({ params }: { params: { id: string } })
   return (
     <main className="mx-auto max-w-4xl px-6 py-16 sm:py-24">
       <Link href="/" className="text-sm text-zinc-400 transition hover:text-white">
-        ← Back to collection
+        ← 返回设备档案
       </Link>
 
       <section className="mt-10">
@@ -25,16 +31,16 @@ export default function DeviceDetailPage({ params }: { params: { id: string } })
             <h1 className="text-4xl font-semibold tracking-tight sm:text-6xl">{device.name}</h1>
             <p className="mt-4 max-w-2xl text-lg leading-7 text-zinc-400">{device.summary}</p>
           </div>
-          <span className="w-fit rounded-full border border-white/10 px-3 py-1.5 text-sm capitalize text-zinc-300">
-            {device.status}
+          <span className="w-fit rounded-full border border-white/10 px-3 py-1.5 text-sm text-zinc-300">
+            {statusLabels[device.status]}
           </span>
         </div>
       </section>
 
       <section className="mt-14 rounded-3xl border border-white/10 bg-white/[0.035] p-6 sm:p-8">
         <div className="mb-6 flex items-center justify-between">
-          <h2 className="text-xl font-semibold">Specifications</h2>
-          <span className="text-sm text-zinc-500">{device.specs.length} fields</span>
+          <h2 className="text-xl font-semibold">规格信息</h2>
+          <span className="text-sm text-zinc-500">{device.specs.length} 项</span>
         </div>
 
         {device.specs.length > 0 ? (
@@ -48,7 +54,7 @@ export default function DeviceDetailPage({ params }: { params: { id: string } })
           </div>
         ) : (
           <p className="rounded-2xl border border-dashed border-white/10 p-6 text-sm leading-6 text-zinc-500">
-            Detailed specifications have not been added yet. This device is ready for more information such as purchase date, price, serial number, ports and personal notes.
+            这台设备暂时还没有补充详细规格。后续可以继续记录购买日期、价格、序列号、接口信息和个人使用备注等内容。
           </p>
         )}
       </section>
