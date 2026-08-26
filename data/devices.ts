@@ -7,16 +7,16 @@ export const devices: Device[] = [
     brand: "Xiaomi / REDMI",
     category: "phone",
     status: "active",
-    summary: "2025 REDMI performance flagship with a high-refresh display and large battery",
+    summary: "2025 年发布的 REDMI 性能旗舰手机，配备高刷新率屏幕和大容量电池。",
     specs: [
-      { label: "Chip", value: "MediaTek Dimensity 9400+" },
-      { label: "Storage", value: "512GB" },
-      { label: "Display", value: "6.83-inch 1.5K OLED, up to 144Hz" },
-      { label: "Battery", value: "7410mAh" },
-      { label: "Charging", value: "100W wired" },
-      { label: "Main camera", value: "50MP" }
+      { label: "芯片", value: "MediaTek Dimensity 9400+" },
+      { label: "存储", value: "512GB" },
+      { label: "屏幕", value: "6.83 英寸 1.5K OLED，最高 144Hz" },
+      { label: "电池", value: "7410mAh" },
+      { label: "充电", value: "100W 有线" },
+      { label: "主摄", value: "50MP" }
     ],
-    tags: ["Android", "Phone", "144Hz", "5G"]
+    tags: ["Android", "手机", "144Hz", "5G"]
   },
   {
     id: "huawei-p30-pro",
@@ -24,16 +24,16 @@ export const devices: Device[] = [
     brand: "Huawei",
     category: "phone",
     status: "spare",
-    summary: "2019 Huawei photography flagship built around the Leica quad-camera system",
+    summary: "2019 年华为 P 系列影像旗舰，核心特点之一是 Leica 四摄系统。",
     specs: [
-      { label: "Chip", value: "Huawei Kirin 980" },
-      { label: "Display", value: "6.47-inch OLED, 2340 × 1080" },
-      { label: "Memory options", value: "6GB / 8GB" },
-      { label: "Storage options", value: "128GB / 256GB" },
-      { label: "Battery", value: "4200mAh" },
-      { label: "Rear cameras", value: "40MP + 20MP + 8MP + ToF" }
+      { label: "芯片", value: "Huawei Kirin 980" },
+      { label: "屏幕", value: "6.47 英寸 OLED，2340 × 1080" },
+      { label: "内存选项", value: "6GB / 8GB" },
+      { label: "存储选项", value: "128GB / 256GB" },
+      { label: "电池", value: "4200mAh" },
+      { label: "后置摄像头", value: "40MP + 20MP + 8MP + ToF" }
     ],
-    tags: ["Android", "Phone", "Leica", "P Series"]
+    tags: ["Android", "手机", "Leica", "P 系列"]
   },
   {
     id: "macbook-air-m1",
@@ -41,16 +41,16 @@ export const devices: Device[] = [
     brand: "Apple",
     category: "laptop",
     status: "active",
-    summary: "Fanless 2020 MacBook Air powered by the first-generation Apple M1 chip",
+    summary: "2020 款无风扇 MacBook Air，搭载第一代 Apple M1 芯片。",
     specs: [
-      { label: "Chip", value: "Apple M1, 8-core CPU" },
-      { label: "Memory", value: "8GB unified memory" },
-      { label: "Display", value: "13.3-inch Retina, 2560 × 1600" },
-      { label: "Brightness", value: "400 nits" },
-      { label: "Ports", value: "2 × Thunderbolt / USB 4 + 3.5mm" },
-      { label: "Weight", value: "1.29 kg" }
+      { label: "芯片", value: "Apple M1，8 核 CPU" },
+      { label: "内存", value: "8GB 统一内存" },
+      { label: "屏幕", value: "13.3 英寸 Retina，2560 × 1600" },
+      { label: "亮度", value: "400 尼特" },
+      { label: "接口", value: "2 × Thunderbolt / USB 4 + 3.5mm" },
+      { label: "重量", value: "1.29 kg" }
     ],
-    tags: ["macOS", "Laptop", "Apple Silicon", "Fanless"]
+    tags: ["macOS", "笔记本", "Apple Silicon", "无风扇"]
   },
   {
     id: "thinkpad-t480s",
@@ -58,16 +58,16 @@ export const devices: Device[] = [
     brand: "Lenovo",
     category: "laptop",
     status: "active",
-    summary: "Thin-and-light ThinkPad business laptop from the T-series generation",
+    summary: "ThinkPad T 系列的轻薄商务笔记本。",
     specs: [
-      { label: "Memory", value: "16GB" },
-      { label: "Graphics", value: "Integrated Intel graphics" },
-      { label: "Display family", value: "14-inch" },
-      { label: "CPU platform", value: "7th / 8th Gen Intel Core options" },
-      { label: "Battery", value: "57Wh integrated" },
-      { label: "Charging", value: "USB-C, Rapid Charge supported" }
+      { label: "内存", value: "16GB" },
+      { label: "图形", value: "Intel 集成显卡" },
+      { label: "屏幕尺寸系列", value: "14 英寸" },
+      { label: "处理器平台", value: "第 7 / 8 代 Intel Core 可选" },
+      { label: "电池", value: "57Wh 内置电池" },
+      { label: "充电", value: "USB-C，支持 Rapid Charge" }
     ],
-    tags: ["ThinkPad", "Laptop", "Business", "USB-C"]
+    tags: ["ThinkPad", "笔记本", "商务", "USB-C"]
   },
   {
     id: "asus-tuf-rtx2060",
@@ -75,12 +75,12 @@ export const devices: Device[] = [
     brand: "ASUS",
     category: "laptop",
     status: "active",
-    summary: "ASUS gaming laptop configured with RTX 2060 graphics",
+    summary: "配备 NVIDIA GeForce RTX 2060 的华硕游戏笔记本。",
     specs: [
-      { label: "Memory", value: "16GB" },
+      { label: "内存", value: "16GB" },
       { label: "GPU", value: "NVIDIA GeForce RTX 2060" }
     ],
-    tags: ["Gaming", "Laptop", "GeForce RTX"]
+    tags: ["游戏", "笔记本", "GeForce RTX"]
   },
   {
     id: "dell-g3",
@@ -88,31 +88,31 @@ export const devices: Device[] = [
     brand: "Dell",
     category: "laptop",
     status: "spare",
-    summary: "Dell G-series gaming laptop configured with GTX 1050 graphics",
+    summary: "配备 GTX 1050 的 Dell G 系列游戏笔记本。",
     specs: [
-      { label: "Memory", value: "12GB" },
+      { label: "内存", value: "12GB" },
       { label: "GPU", value: "NVIDIA GeForce GTX 1050" },
-      { label: "GPU memory", value: "4GB GDDR5 on G3 3579 GTX 1050 configuration" },
-      { label: "Platform note", value: "Exact G3 submodel still to be confirmed" }
+      { label: "显存", value: "G3 3579 的 GTX 1050 配置为 4GB GDDR5" },
+      { label: "型号备注", value: "你的具体 G3 子型号仍待确认" }
     ],
-    tags: ["Gaming", "Laptop", "GeForce GTX"]
+    tags: ["游戏", "笔记本", "GeForce GTX"]
   },
   {
     id: "custom-desktop",
-    name: "Custom Desktop PC",
-    brand: "Custom Build",
+    name: "自组装台式机",
+    brand: "自组装",
     category: "desktop",
     status: "active",
-    summary: "Self-built desktop for daily use and gaming",
+    summary: "用于日常使用和游戏的自组装台式电脑。",
     specs: [
       { label: "CPU", value: "Intel Core i3-13100F" },
-      { label: "Memory", value: "16GB" },
+      { label: "内存", value: "16GB" },
       { label: "GPU", value: "AMD Radeon RX 7600" },
       { label: "SSD", value: "512GB" },
       { label: "HDD", value: "512GB" },
-      { label: "Total storage", value: "1TB" }
+      { label: "总存储", value: "1TB" }
     ],
-    tags: ["Desktop", "Custom Build", "Radeon"]
+    tags: ["台式机", "自组装", "Radeon"]
   },
   {
     id: "huawei-mateview-se",
@@ -120,16 +120,16 @@ export const devices: Device[] = [
     brand: "Huawei",
     category: "monitor",
     status: "active",
-    summary: "23.8-inch Full HD IPS desktop monitor with wide color coverage",
+    summary: "23.8 英寸 Full HD IPS 桌面显示器，覆盖较广色域。",
     specs: [
-      { label: "Display", value: "23.8-inch IPS LCD" },
-      { label: "Resolution", value: "1920 × 1080" },
-      { label: "Brightness", value: "250 nits typical" },
-      { label: "Color gamut", value: "90% P3 / 100% sRGB" },
-      { label: "Contrast", value: "1000:1" },
-      { label: "Ports", value: "HDMI + DisplayPort" }
+      { label: "面板", value: "23.8 英寸 IPS LCD" },
+      { label: "分辨率", value: "1920 × 1080" },
+      { label: "亮度", value: "典型 250 尼特" },
+      { label: "色域", value: "90% P3 / 100% sRGB" },
+      { label: "对比度", value: "1000:1" },
+      { label: "接口", value: "HDMI + DisplayPort" }
     ],
-    tags: ["Display", "IPS", "1080p"]
+    tags: ["显示器", "IPS", "1080p"]
   },
   {
     id: "dell-u2422hx",
@@ -137,16 +137,16 @@ export const devices: Device[] = [
     brand: "Dell",
     category: "monitor",
     status: "active",
-    summary: "23.8-inch UltraSharp productivity monitor with an integrated USB hub",
+    summary: "23.8 英寸 UltraSharp 办公显示器，带集成 USB Hub。",
     specs: [
-      { label: "Display", value: "23.8-inch IPS" },
-      { label: "Resolution", value: "1920 × 1080 @ 60Hz" },
-      { label: "Brightness", value: "250 cd/m²" },
-      { label: "Color", value: "100% sRGB / 100% Rec.709 / 85% DCI-P3" },
-      { label: "Hub", value: "USB 3.2 Gen 2 / USB-C hub" },
-      { label: "Video ports", value: "HDMI + DisplayPort 1.4 + DP out (MST)" }
+      { label: "面板", value: "23.8 英寸 IPS" },
+      { label: "分辨率", value: "1920 × 1080 @ 60Hz" },
+      { label: "亮度", value: "250 cd/m²" },
+      { label: "色彩", value: "100% sRGB / 100% Rec.709 / 85% DCI-P3" },
+      { label: "Hub", value: "USB 3.2 Gen 2 / USB-C Hub" },
+      { label: "视频接口", value: "HDMI + DisplayPort 1.4 + DP 输出（MST）" }
     ],
-    tags: ["Display", "UltraSharp", "IPS", "USB Hub"]
+    tags: ["显示器", "UltraSharp", "IPS", "USB Hub"]
   },
   {
     id: "viture-pro-2",
@@ -154,25 +154,25 @@ export const devices: Device[] = [
     brand: "VITURE",
     category: "xr",
     status: "active",
-    summary: "2026 XR glasses built around Sony Micro-OLED panels for portable big-screen viewing",
+    summary: "使用 Sony Micro-OLED 面板的便携 XR 眼镜，用于大屏显示体验。",
     specs: [
-      { label: "Display", value: "Sony Micro-OLED" },
-      { label: "Resolution", value: "1920 × 1080 per eye" },
-      { label: "Refresh rate", value: "Up to 120Hz" },
-      { label: "Field of view", value: "50°" },
-      { label: "Peak perceived brightness", value: "1600 nits" },
-      { label: "Weight", value: "63g" },
-      { label: "Connection", value: "USB-C" },
-      { label: "Diopter adjustment", value: "Down to -5.0D" }
+      { label: "显示面板", value: "Sony Micro-OLED" },
+      { label: "分辨率", value: "单眼 1920 × 1080" },
+      { label: "刷新率", value: "最高 120Hz" },
+      { label: "视场角", value: "50°" },
+      { label: "峰值感知亮度", value: "1600 尼特" },
+      { label: "重量", value: "63g" },
+      { label: "连接", value: "USB-C" },
+      { label: "屈光度调节", value: "最低 -5.0D" }
     ],
-    tags: ["XR", "Wearable", "Micro-OLED", "120Hz"]
+    tags: ["XR", "穿戴设备", "Micro-OLED", "120Hz"]
   }
 ];
 
 export const categoryLabels = {
-  phone: "Phones",
-  laptop: "Laptops",
-  desktop: "Desktop",
-  monitor: "Displays",
-  xr: "XR"
+  phone: "手机",
+  laptop: "笔记本电脑",
+  desktop: "台式电脑",
+  monitor: "显示器",
+  xr: "XR 设备"
 } as const;
