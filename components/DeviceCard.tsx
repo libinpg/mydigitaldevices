@@ -9,6 +9,12 @@ const iconByCategory = {
   xr: "🥽"
 } as const;
 
+const statusLabels = {
+  active: "在用",
+  spare: "备用",
+  retired: "已退役"
+} as const;
+
 export default function DeviceCard({ device }: { device: Device }) {
   return (
     <Link
@@ -17,8 +23,8 @@ export default function DeviceCard({ device }: { device: Device }) {
     >
       <div className="mb-8 flex items-start justify-between gap-4">
         <div className="text-3xl" aria-hidden="true">{iconByCategory[device.category]}</div>
-        <span className="rounded-full border border-white/10 px-2.5 py-1 text-xs capitalize text-zinc-400">
-          {device.status}
+        <span className="rounded-full border border-white/10 px-2.5 py-1 text-xs text-zinc-400">
+          {statusLabels[device.status]}
         </span>
       </div>
       <p className="mb-1 text-xs uppercase tracking-[0.2em] text-zinc-500">{device.brand}</p>
